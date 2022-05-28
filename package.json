@@ -1,0 +1,42 @@
+{
+  "name": "vue-infinite-scrolling",
+  "version": "0.0.2",
+  "description": "Vue component plugin for infinite-scrolling.",
+  "keywords": [
+    "infinite-scroll",
+    "vue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FedorTregubov/vue-infinite-scrolling.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": ".dist/vue-infinite-scrolling.umd.js",
+  "module": ".dist/vue-infinite-scrolling.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-infinite-scrolling.es.js",
+      "require": "./dist/vue-infinite-scrolling.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  }
+}
